@@ -1,6 +1,7 @@
 package com.sparta.post.util;
 
 
+import com.sparta.post.entity.UserRoleEnum;
 import io.jsonwebtoken.*;
 import io.jsonwebtoken.security.Keys;
 import jakarta.annotation.PostConstruct;
