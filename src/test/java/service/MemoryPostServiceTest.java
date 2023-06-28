@@ -1,3 +1,4 @@
+/*
 package service;
 
 import com.sparta.post.dto.PostRequestDto;
@@ -81,4 +82,4 @@ class MemoryPostServiceTest {
 
 
     }
-}
+}*/

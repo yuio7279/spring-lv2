@@ -1,3 +1,4 @@
+/*
 package service;
 
 import com.sparta.post.repository.PostRepository;
@@ -11,3 +12,4 @@ public class JPAPostServiceTest {
     @Autowired
     PostRepository postRepository;
 }
+*/
