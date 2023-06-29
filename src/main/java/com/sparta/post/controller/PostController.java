@@ -3,6 +3,8 @@ package com.sparta.post.controller;
 import com.sparta.post.dto.PostRequestDto;
 import com.sparta.post.dto.PostResponseDto;
 import com.sparta.post.entity.Post;
+import com.sparta.post.security.UserDetailsImpl;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import com.sparta.post.service.PostService;
 
@@ -28,8 +30,8 @@ public class PostController {
     }
 
     @PostMapping("/posts")
-    public PostResponseDto createPost(@RequestBody PostRequestDto postRequestDto){
-        return postService.createPost(postRequestDto);
+    public PostResponseDto createPost(@RequestBody PostRequestDto postRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetails){
+        return postService.createPost(postRequestDto, userDetails.getUser());
     }
 
     @DeleteMapping("/posts")

@@ -3,6 +3,7 @@ package com.sparta.post.service;
 import com.sparta.post.dto.PostRequestDto;
 import com.sparta.post.dto.PostResponseDto;
 import com.sparta.post.entity.Post;
+import com.sparta.post.entity.User;
 import org.springframework.stereotype.Service;
 import com.sparta.post.repository.PostRepository;
 import org.springframework.transaction.annotation.Transactional;
@@ -23,10 +24,13 @@ public class PostService {
         return postRepository.findAllByOrderByModifiedAtDesc().stream().map(PostResponseDto::new).toList();
 
     }
-    public PostResponseDto createPost(PostRequestDto postRequestDto){
-        //Entity로 변환
+    public PostResponseDto createPost(PostRequestDto postRequestDto, User user){
+
+        //작성자명 세팅
+        postRequestDto.setUserName(user.getUsername());
         Post post = new Post(postRequestDto);
 
+        //Entity로 변환
         Post savePost = postRepository.save(post);
         PostResponseDto postResponseDto = new PostResponseDto(savePost);
         return postResponseDto;
