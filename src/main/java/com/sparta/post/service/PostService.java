@@ -43,8 +43,12 @@ public class PostService {
 
     }
 
-    public PostResponseDto deletePost(Long id,String password){
+    public PostResponseDto deletePost(Long id,String password, User user){
         Post post = getPostOne(id);
+        String postUsername = post.getUserName();
+        if(!postUsername.equals(user.getUsername())){
+            throw new IllegalArgumentException("작성자 본인이 아닙니다.");
+        }
 
         if(post.getPassword().equals(password)){
             postRepository.delete(post);
@@ -52,14 +56,20 @@ public class PostService {
             postResponseDto.setMsg(id+"번 글 삭제가 완료되었습니다.");
             return postResponseDto;
         }else{
-            throw new InputMismatchException("비밀번호가 올바루지 않습니다.");
+            throw new InputMismatchException("비밀번호가 올바르지 않습니다.");
         }
     }
 
     @Transactional
-    public PostResponseDto updatePost(Long id, PostRequestDto postRequestDto){
+    public PostResponseDto updatePost(Long id, PostRequestDto postRequestDto, User user){
         Post post = getPostOne(id);
+        String postUsername = post.getUserName();
+        if(!postUsername.equals(user.getUsername())){
+            throw new IllegalArgumentException("작성자 본인이 아닙니다.");
+        }
+
         if(post.getPassword().equals(postRequestDto.getPassword())){
+            postRequestDto.setUserName(user.getUsername());
             post.update(postRequestDto);
             PostResponseDto postResponseDto = new PostResponseDto(post);
             return postResponseDto;

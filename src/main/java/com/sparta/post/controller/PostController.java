@@ -34,13 +34,13 @@ public class PostController {
         return postService.createPost(postRequestDto, userDetails.getUser());
     }
 
-    @DeleteMapping("/posts")
-    public PostResponseDto deletePost(@RequestParam Long id, @RequestParam String password){
-        return postService.deletePost(id,password);
-    }
+//    @DeleteMapping("/posts")
+//    public PostResponseDto deletePost(@RequestBody DeleteRequestDto deleteRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetails){
+//        return postService.deletePost(DeleteRequestDto userDetails.getUser());
+//    }
 
     @PutMapping("/posts/{id}")
-    public PostResponseDto updatePost(@PathVariable Long id, @RequestBody PostRequestDto postRequestDto){
-        return postService.updatePost(id, postRequestDto);
+    public PostResponseDto updatePost(@PathVariable Long id, @RequestBody PostRequestDto postRequestDto,@AuthenticationPrincipal UserDetailsImpl userDetails){
+        return postService.updatePost(id, postRequestDto, userDetails.getUser());
     }
 }
