@@ -8,12 +8,10 @@ API 명세서
 https://lofty-flea-38c.notion.site/API-1669808f66b9465899f228171994f364
 
 1. 전체게시글 조회 확인
-
-![image](https://github.com/yuio7279/blog_CRUD/assets/94231335/6ffc80a6-a8e2-40e4-94da-eb26163a765b)
+준비중
 
 2. 게시글 한개 조회 확인
-
-![image](https://github.com/yuio7279/blog_CRUD/assets/94231335/249d23a5-cad7-4e93-ada6-99f1149969e3)
+준비중
 
 3. 게시글 작성 확인
 
@@ -22,11 +20,11 @@ https://lofty-flea-38c.notion.site/API-1669808f66b9465899f228171994f364
 
 4. 게시글 수정 확인
 
-![image](https://github.com/yuio7279/blog_CRUD/assets/94231335/0c3da27a-a462-4b07-86a4-f519d9e32019)
+준비중
 
 5. 게시글 삭제 확인
 
-![image](https://github.com/yuio7279/blog_CRUD/assets/94231335/01cf4988-8d7c-4801-995f-bceeb208e571)
+준비중
 
 6. 회원 가입 확인
 
