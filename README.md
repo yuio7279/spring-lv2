@@ -16,10 +16,11 @@ https://lofty-flea-38c.notion.site/API-1669808f66b9465899f228171994f364
 ![image](https://github.com/yuio7279/blog_CRUD/assets/94231335/249d23a5-cad7-4e93-ada6-99f1149969e3)
 
 3. 게시글 작성 확인
-4. ![스크린샷(96)](https://github.com/yuio7279/spring-lv2/assets/94231335/5a678fd2-825c-45f9-a4f5-053fbe97d282)
+
+![스크린샷(96)](https://github.com/yuio7279/spring-lv2/assets/94231335/5a678fd2-825c-45f9-a4f5-053fbe97d282)
 
 
-5. 게시글 수정 확인
+4. 게시글 수정 확인
 
 ![image](https://github.com/yuio7279/blog_CRUD/assets/94231335/0c3da27a-a462-4b07-86a4-f519d9e32019)
 
@@ -28,11 +29,12 @@ https://lofty-flea-38c.notion.site/API-1669808f66b9465899f228171994f364
 ![image](https://github.com/yuio7279/blog_CRUD/assets/94231335/01cf4988-8d7c-4801-995f-bceeb208e571)
 
 6. 회원 가입 확인
-7. ![스크린샷(95)](https://github.com/yuio7279/spring-lv2/assets/94231335/1cab2fee-2ff4-4d9b-9d77-5d1746ecd59d)
 
+![스크린샷(95)](https://github.com/yuio7279/spring-lv2/assets/94231335/1cab2fee-2ff4-4d9b-9d77-5d1746ecd59d)
 
-8. 로그인 확인
-9. ![스크린샷(94)](https://github.com/yuio7279/spring-lv2/assets/94231335/f4627456-0933-48ba-bbf1-2096f7ae6a1e)
+7. 로그인 확인
+
+![스크린샷(94)](https://github.com/yuio7279/spring-lv2/assets/94231335/f4627456-0933-48ba-bbf1-2096f7ae6a1e)
 
 
 
