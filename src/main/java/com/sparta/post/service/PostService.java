@@ -1,5 +1,6 @@
 package com.sparta.post.service;
 
+import com.sparta.post.dto.DeleteRequestDto;
 import com.sparta.post.dto.PostRequestDto;
 import com.sparta.post.dto.PostResponseDto;
 import com.sparta.post.entity.Post;
@@ -43,14 +44,14 @@ public class PostService {
 
     }
 
-    public PostResponseDto deletePost(Long id,String password, User user){
+    public PostResponseDto deletePost(Long id, DeleteRequestDto deleteRequestDto, User user){
         Post post = getPostOne(id);
         String postUsername = post.getUserName();
         if(!postUsername.equals(user.getUsername())){
             throw new IllegalArgumentException("작성자 본인이 아닙니다.");
         }
 
-        if(post.getPassword().equals(password)){
+        if(post.getPassword().equals(deleteRequestDto.getPassword())){
             postRepository.delete(post);
             PostResponseDto postResponseDto = new PostResponseDto(post);
             postResponseDto.setMsg(id+"번 글 삭제가 완료되었습니다.");

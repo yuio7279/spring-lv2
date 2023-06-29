@@ -1,5 +1,6 @@
 package com.sparta.post.controller;
 
+import com.sparta.post.dto.DeleteRequestDto;
 import com.sparta.post.dto.PostRequestDto;
 import com.sparta.post.dto.PostResponseDto;
 import com.sparta.post.entity.Post;
@@ -34,10 +35,10 @@ public class PostController {
         return postService.createPost(postRequestDto, userDetails.getUser());
     }
 
-//    @DeleteMapping("/posts")
-//    public PostResponseDto deletePost(@RequestBody DeleteRequestDto deleteRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetails){
-//        return postService.deletePost(DeleteRequestDto userDetails.getUser());
-//    }
+    @DeleteMapping("/posts/{id}")
+    public PostResponseDto deletePost(@PathVariable Long id,@RequestBody DeleteRequestDto deleteRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetails){
+        return postService.deletePost(id, deleteRequestDto, userDetails.getUser());
+    }
 
     @PutMapping("/posts/{id}")
     public PostResponseDto updatePost(@PathVariable Long id, @RequestBody PostRequestDto postRequestDto,@AuthenticationPrincipal UserDetailsImpl userDetails){
