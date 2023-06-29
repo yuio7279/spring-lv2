@@ -3,6 +3,14 @@
 
 프로젝트 진행 기간 6/28~6/29
 
+연관관계에 대한 이해가 부족하여 현재 매핑만하고 사용을 해보지 못했습니다. 이후에 계속 업데이트 해나가겠습니다.
+
+ERD
+
+<img width="543" alt="image" src="https://github.com/yuio7279/spring-lv2/assets/94231335/e6a8d0d9-dd2b-4ee5-8bf8-6fbcb74e8800">
+
+
+
 API 명세서
 
 https://lofty-flea-38c.notion.site/API-1669808f66b9465899f228171994f364
