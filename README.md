@@ -5,6 +5,10 @@
 
 연관관계에 대한 이해가 부족하여 현재 매핑만하고 사용을 해보지 못했습니다. 이후에 계속 업데이트 해나가겠습니다.
 
+*피드백 변경사항 
+1. 커밋메시지 더욱 세부적인 한글로 변경했습니다 
+2. 게시글 삭제시 비밀번호는 url노출금지 -> DeleteDto를 새로 생성하였습니다. 
+
 ERD
 
 <img width="543" alt="image" src="https://github.com/yuio7279/spring-lv2/assets/94231335/e6a8d0d9-dd2b-4ee5-8bf8-6fbcb74e8800">
@@ -32,11 +36,13 @@ https://lofty-flea-38c.notion.site/API-1669808f66b9465899f228171994f364
 
 4. 게시글 수정 확인
 
-준비중
+![스크린샷(99)](https://github.com/yuio7279/spring-lv2/assets/94231335/632d15c6-4e1a-45a8-9822-c1c17d60993c)
 
-5. 게시글 삭제 확인
 
-준비중
+6. 게시글 삭제 확인
+
+![스크린샷(100)](https://github.com/yuio7279/spring-lv2/assets/94231335/bead6682-19cd-4af3-a8fb-99f46849d0da)
+
 
 6. 회원 가입 확인
 
