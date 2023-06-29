@@ -27,7 +27,7 @@ public class UserController {
     }
 
     @PostMapping("/user/signup")
-    public SignupResponseDto signup(@RequestBody SignupRequestDto requestDto, BindingResult bindingResult) {
+    public SignupResponseDto signup(@Valid @RequestBody SignupRequestDto requestDto, BindingResult bindingResult) {
         // Validation 예외처리
         List<FieldError> fieldErrors = bindingResult.getFieldErrors();
         if(fieldErrors.size() > 0) {
