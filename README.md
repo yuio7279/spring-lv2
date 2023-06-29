@@ -10,6 +10,7 @@
 2. 게시글 삭제시 비밀번호는 url노출금지 -> DeleteDto를 새로 생성하였습니다. 
 
 블로그 https://dao-blog.tistory.com/58
+
 ERD
 
 <img width="543" alt="image" src="https://github.com/yuio7279/spring-lv2/assets/94231335/e6a8d0d9-dd2b-4ee5-8bf8-6fbcb74e8800">
